@@ -65,7 +65,7 @@ console.log(
   stocks.filter(
     (stock) =>
       stock.cat === "electronica" &&
-      stock.price !== 200 &&
+      (stock.price !== 200) &&
       stock.inStock
   )
 );
