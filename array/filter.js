@@ -47,7 +47,7 @@ let stocks = [
   { name: "audifonos", price: 100, cat: "electronica", inStock: false },
   { name: "sandalias", price: 50, cat: "ropa", inStock: true },
 ];
-console.log(stocks.filter((product) => product.inStock === true));
+console.log(stocks.filter((product) => product.inStock));
 
 // ejercicio 9
 console.log(
@@ -66,6 +66,6 @@ console.log(
     (stock) =>
       stock.cat === "electronica" &&
       stock.price !== 200 &&
-      stock.inStock === true
+      stock.inStock
   )
 );
